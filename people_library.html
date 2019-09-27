@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <title>People</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Short description">
+  <meta name="keywords" content="Eivind Magnus Haraldsen photographer portfolio people">
+  <meta name="author" content="Odd E. Haraldsen">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,900&display=swap" rel="stylesheet">
+</head>
+ <!--  -->
+<body>
+<header>
+  <a href="index.html">
+    <picture>
+      <source srcset="images/logo.jpg" media="(min-width:600px)">
+      <img src="images/logo-small.jpg" alt="">
+    </picture>
+  </a>
+  <div class="contact-me">
+    <a href="https://www.instagram.com/magnushar/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+    <p>Email:  &nbsp;  Magnus.har@hotmail.no
+      <br>
+    Phone: +47&nbsp;902&nbsp;10&nbsp;102 </p>
+  </div>
+</header>
+
+<div class="wrapper">
+<div class="photo-one size">
+  <picture>
+      <source srcset="images/bilde1-medium.jpg" media="(min-width:600px)">
+      <img src="images/bilde1-small.jpg" alt="">
+    </picture>
+</div>
+
+<div class="photo-two size">
+  <picture>
+      <source srcset="images/bilde2-medium.jpg" media="(min-width:600px)">
+      <img src="images/bilde2-small.jpg" alt="">
+    </picture>
+</div>
+
+<div class="photo-three size">
+  <picture>
+      <source srcset="images/bilde3-medium.jpg" media="(min-width:600px)">
+      <img src="images/bilde3-small.jpg" alt="">
+    </picture>
+</div>
+
+<div class="photo-four size">
+  <picture>
+      <source srcset="images/bilde4-medium.jpg" media="(min-width:600px)">
+      <img src="images/bilde4-small.jpg" alt="">
+    </picture>
+</div>
+
+<div class="photo-five size">
+  <picture>
+      <source srcset="images/bilde5-medium.jpg" media="(min-width:600px)">
+      <img src="images/bilde5-small.jpg" alt="">
+    </picture>
+</div>
+
+<div class="photo-six size">
+  <picture>
+      <source srcset="images/bilde6-medium.jpg" media="(min-width:600px)">
+      <img src="images/bilde6-small.jpg" alt="">
+    </picture>
+</div>
+</div>
+<footer class="box">
+  <p>&copy E. Magnus Haraldsen and [Site Name], 2019. Unauthorized use and/or duplication of this material without express and written permission from this sites owner is strictly prohibited. Images may be used, provided that full and clear credit is given to E. Magnus Haraldsen and [Site Name] with appropriate and specific direction to the original content.</p>
+</footer>
+
+
+<script type="text/javascript">
+//stops user from copy pasting in the wrapper class div
+  $(document).ready(function() {
+    $('.wrapper').bind('cut copy paste', function (e) {
+      e.preventDefault();
+    })
+    $(".wrapper").on("contextmenu", function(e) {
+      return false;
+    })
+  })
+</script>
+
+</body>
+
+</html>
