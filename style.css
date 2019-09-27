@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    paddin: 0;
+}
+body {
+    box-sizing: border-box;
+    color: black;
+    line-height: 1.4;
+    font-family: 'Lato', sans-serif;
+}
+header {
+    display: grid;
+    grid-template-areas: ". hm cm .";
+}
+header a:visited {
+    color:black;
+}
+ion-icon {
+    float: right;
+    font-size: 2em;
+}
+img {
+    /*stops user from dragging images to desktop*/
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+header img {
+    grid-area: hm;
+    width: 155px;
+    height: 102px;
+    margin: 50px 15px 15px 18px;
+}
+
+.contact-me {
+    grid-area: cm;
+    width: 155px;
+    height: 102px;
+    float: right;
+    margin:50px 18px 15px 15px;
+}
+.contact-me p {
+    margin-top: 2em;
+}
+.worked-with {
+    width: 281px;
+    height: 226px;
+    margin: auto;
+    text-align: center;
+}
+.worked-with p {
+    line-height: 2em;
+}
+
+.my-work {
+    text-align: center;
+}
+.my-work img {
+    margin-top: 1em;
+    width: 281px;
+    height: 371px;
+
+    -webkit-filter: grayscale(100%);filter: grayscale(100%);
+}
+
+.my-work img:hover {
+    -webkit-filter: grayscale(0%);filter: grayscale(0%);
+}
+
+h1 {
+    display: none;
+    font-family: Georgia,Times,Times New Roman,serif;
+    font-weight: 100;
+    font-style: italic;
+    text-transform: uppercase;
+    color: white;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -150%);
+}
+.my-work:hover h1{
+    display: block;
+}
+.size {
+    text-align: center;
+    margin-top: 5em;
+
+}
+.size img{
+    width: 90%;
+    object-fit: cover;
+}
+.box {
+    margin: 5vw 20vw;
+}
+
+@media only screen and (min-width: 600px) {
+
+header {
+    grid-template-areas: ". hm . cm";
+    }
+.container{
+    width: 371px;
+    margin: auto;
+}
+.contact-me {
+    float: right;
+    width: auto;
+    margin-left: 15vw;
+    }
+.size img {
+    width: 80%;
+}
+.wrapper {
+    display: grid;
+    grid-template-areas:
+    ". one one . . . . ."
+    ". one one . two two . ."
+    ". . three three two two . ."
+    ". . three three four four . ."
+    ". . . . four four . ."
+    ". five five . . six six ."
+    ". five five . . six six .";
+}
+.photo-one {
+    grid-area: one;
+}
+.photo-two {
+    grid-area: two;
+}
+
+.photo-three {
+    grid-area: three;
+}
+.photo-three img {
+    width: 50%;
+    margin-top: 20vh;
+}
+.photo-four {
+    grid-area: four;
+    margin-right: 10vw;
+    margin-left: 5vw;
+}
+.photo-five {
+    grid-area: five;
+    margin-left: 10vw;
+}
+.photo-six {
+    grid-area: six;
+
+}
+}
